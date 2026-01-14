@@ -1,1 +1,1 @@
-# Galerkin_ROMs
+# Galerkin ROMs for Couette flow
