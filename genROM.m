@@ -19,7 +19,9 @@ set(0,'DefaultFigureColor','remove')
 set(0,'DefaultFigureColor',[1 1 1])
 
 
-%% Domain parameters (adapt to avoid aliasing)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Domain parameters (adapt to avoid aliasing)                  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Nx      = 10;                   % Number of grid points in the streamwise direction
 Nz      = 10;                   % Number of grid points in the spanwise direction
@@ -28,7 +30,9 @@ Lx      = 2.0*pi;               % Streamwise domain size
 Lz      = 1.0*pi;               % Spanwise domain size
 
 
-%% Grid generation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Grid generation                 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Wall-normal grid (Chebyshev discretisation)
 [y,A]   = chebdif(Ny,2);        % Chebyshev grid in the wall-normal direction
@@ -51,7 +55,10 @@ facz    = Lz/(2*pi); z = z*facz; Dz = Dz/facz; Dz2 = Dz2/facz^2;
 dx      = x(2)-x(1);
 dz      = z(2)-z(1);
 
-%% ROM parameters
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ROM parameters              
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Ulam    = y;                % Laminar flow solution (used to compute basis)
 Re_bas  = 100;              % Reynolds number for basis computation
