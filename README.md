@@ -1,5 +1,5 @@
 # Galerkin ROMs for Couette flow
-Galerkin_ROM_Couette_flow is a set of codes to generate, run and explore Galerkin-based reduced order models (ROMs) for Couette flow. Such ROMs can be used for multiple purposes, such as estimating flow turbulence statistics [1], deriving generalised-quasilinear approximations [2] and performing control optimisation [3]. The models use controllability modes as basis functions, which are derived from the response of the linearised Navier-Stokes operator to white-noise forcing, as laid out in [1].
+Galerkin_ROM_Couette_flow is a set of codes to generate, run and explore Galerkin-based reduced-order models (ROMs) for Couette flow. Such ROMs can be used for multiple purposes, such as estimating flow statistics [1], deriving generalised-quasilinear approximations [2] and performing control optimisation [3]. The models use controllability modes as basis functions, which are derived from the response of the linearised Navier-Stokes operator to white-noise forcing, as laid out in [1].
 
 # The codes <h3>
 ROM generation, time integration and post-processing are performed in the Matlab environment. The codes use a Fourier-Chebyshev discretisation of the domain, and a standard 4th/5th Runge-Kutta method for the time integration. They can be downloaded from the terminal by typing:
